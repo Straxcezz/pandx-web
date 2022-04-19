@@ -29,9 +29,10 @@ function validation() {
     var NameContact = document.querySelector("#name").value;
     var EmailContact = document.querySelector("#email").value;
     var MessageContact= document.querySelector("#message").value;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if(NameContact && EmailContact && MessageContact) {
-        swal("Good job!", "You clicked the button!", "success");
+    if(EmailContact.match(mailformat) && NameContact && EmailContact && MessageContact) {
+        swal("Berhasil!", "Klik button untuk kembali!", "success");
         document.querySelector("#name").reset();
         document.querySelector("#email").reset();
         document.querySelector("#message").reset();
