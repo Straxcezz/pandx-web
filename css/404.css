@@ -21,7 +21,7 @@ body {
   .typewriter h1 {
 	color: #fff;
 	font-family: 'Roboto Mono', monospace;
-	font-size: lage;
+	font-size: large;
 	overflow: hidden;
 	border-right: .15em solid rgb(255, 255, 255); 
 	white-space: nowrap;
