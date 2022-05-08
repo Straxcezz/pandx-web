@@ -5,12 +5,6 @@
 /*       404 Styles       */
 /**************************/
 
-body {
-	background: #333;
-	display: flex;
-	justify-content: center;
-  }
-
 .typewriter{
 	top: 50%;
 	left: 50%;
@@ -19,14 +13,14 @@ body {
 }
   
   .typewriter h1 {
-	color: #fff;
+	color: #333;
 	font-family: 'Roboto Mono', monospace;
 	font-size: large;
-	overflow: hidden;
-	border-right: .15em solid rgb(255, 255, 255); 
-	white-space: nowrap;
-	margin: 0 auto;
-	letter-spacing: .15em;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
 	animation: 
 	  typing 3.5s steps(30, end),
 	  blink-caret .5s step-end infinite;
@@ -38,14 +32,16 @@ body {
 	left: 45%;
 	transform: translate(-45%,-45%);
 	position: relative;
-	color: #fff;
+	color: #333;
 }
-
+  
+  /* The typing effect */
   @keyframes typing {
 	from { width: 0 }
 	to { width: 100% }
   }
   
+  /* The typewriter cursor effect */
   @keyframes blink-caret {
 	from, to { border-color: transparent }
 	50% { border-color: rgb(255, 255, 255) }
